@@ -30,7 +30,8 @@
             name="title" 
             id="title" 
             class="block" 
-            placeholder="Um titulo para anunciar seu carro">
+            placeholder="Um titulo para anunciar seu carro"
+            required>
           </div>
           <div class="box_input">
             <label for="price">
@@ -41,69 +42,75 @@
             name="price"
             id="price"
             class="block"
-            placeholder="Defina o preço">
+            placeholder="Defina o preço"
+            required>
           </div>
           <div class="box_input">
             <label for="description">
-              Descrição
+              Descrição <span class="red">*</span>
             </label>
             <textarea 
             name="description" 
             id="description" 
-            placeholder="Aqui você coloca detalhes do veículo. Exemplo: possui um pequeno arranhão">
+            placeholder="Aqui você coloca detalhes do veículo. Exemplo: possui um pequeno arranhão"
+            required >
             </textarea>
           </div>
           <div class="box_input">
             <label for="mark">
-              Marca
+              Marca <span class="red">*</span>
             </label>
             <input 
             type="text" 
             name="mark" 
             id="mark" 
-            placeholder="Insira o fabricante">
+            placeholder="Insira o fabricante"
+            required>
           </div>
           <div class="box_input">
             <label for="model">
-              Modelo
+              Modelo <span class="red">*</span>
             </label>
             <input 
             type="text" 
             name="model" 
             id="model" 
             class="block" 
-            placeholder="Modelo do veículo">
+            placeholder="Modelo do veículo"
+            required>
           </div>
           <div class="box_input">
             <label for="km">
-              Kilometragem
+              Kilometragem <span class="red">*</span>
             </label>
             <input 
             type="text" 
             name="km" 
             id="km" 
             class="block" 
-            placeholder="Digite a kilometragem do veículo">
+            placeholder="Digite a kilometragem do veículo"
+            required>
           </div>
           <div class="box_input">
             <label for="date">
-              Data da compra
+              Data da compra <span class="red">*</span>
             </label>
             <input 
             type="date" 
             name="date" 
             id="date" 
-            class="block">
+            class="block"
+            required>
           </div>
           <div class="box_input">
-            <p>Tipo de câmbio</p>
+            <p>Tipo de câmbio <span class="red">*</span></p>
             <input type="radio" name="manual" value="type_exchange">
             <label for="manual">Manual</label>
             <input type="radio" name="automatic" value="type_exchange">
             <label for="automatic">Automático</label>
           </div>
           <div class="box_input">
-            <p>Opcionais</p>
+            <p>Opcionais <span class="red">*</span></p>
             <ul class="select_optional">
               <li>
                 <input type="checkbox" name="optional[]" id="airbag" value="airbag">
@@ -141,7 +148,7 @@
               </li>
             </ul>
             <div class="box_input">
-              <p>Fotos do Carro</p>
+              <p>Fotos do Carro <span class="red">*</span></p>
               <input type="file" multiple accept="image/png, image/jpg" name="pictures" id="pictures" required>
             </div>
             <input type="submit" value="send" class="btn_submit">
