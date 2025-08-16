@@ -52,6 +52,7 @@
             <textarea 
             name="description" 
             id="description" 
+            class="block"
             placeholder="Aqui você coloca detalhes do veículo. Exemplo: possui um pequeno arranhão"
             required >
             </textarea>
@@ -63,7 +64,8 @@
             <input 
             type="text" 
             name="mark" 
-            id="mark" 
+            id="mark"
+            class="block" 
             placeholder="Insira o fabricante"
             required>
           </div>
@@ -151,7 +153,9 @@
               <p>Fotos do Carro <span class="red">*</span></p>
               <input type="file" multiple accept="image/png, image/jpg" name="pictures" id="pictures" required>
             </div>
-            <input type="submit" value="send" class="btn_submit">
+            <div class="btn">
+              <input type="submit" value="send" class="btn_submit">
+            </div>
           </div>
         </form>
       </div>
